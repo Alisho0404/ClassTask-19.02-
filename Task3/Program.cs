@@ -12,12 +12,12 @@ player.Team = Console.ReadLine();
 Console.WriteLine();
 
 player.ScoreGoal();
-player.AssistGoal(player.Name);
+player.AssistGoal("Neymar");
 
 Console.WriteLine();
 player.GetInfo();
 player.ScoreGoal();
-player.AssistGoal(player.Name);
+player.AssistGoal("Neymar");
 
 
 class Player
@@ -32,8 +32,8 @@ class Player
     } 
     public void AssistGoal(string player_name) 
     { 
-        Name= player_name;
-        Console.WriteLine($"Player {Name} assists a goal for Neymar.");
+        
+        Console.WriteLine($"Player {Name} assists a goal for {player_name}.");
     } 
     public void GetInfo() 
     {

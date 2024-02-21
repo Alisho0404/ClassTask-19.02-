@@ -4,7 +4,8 @@ post.SetPost("It is text");
 post.AddLike();
 post.AddLike();
 post.AddComment("Super");
-post.AddComment("Great");
+post.AddComment("Great"); 
+post.AddComment("Well done");
 post.GetInfo();
 
 class Post
@@ -31,7 +32,8 @@ class Post
     public void GetInfo()
     {
         Console.WriteLine($"Text: {Text}");
-        Console.WriteLine($"Likes: {Likes}");
+        Console.WriteLine($"Likes: {Likes}"); 
+        System.Console.WriteLine();
         Console.WriteLine($"Comments:");
         for (int i = 0; i < Comments.Count; i++)
         {
